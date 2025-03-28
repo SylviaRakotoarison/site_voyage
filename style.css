@@ -1,0 +1,272 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+}
+/* barre de navigation */
+.logo img{
+
+    height: 50px;
+}
+
+.navbar{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 20px;
+   background-color: #fff;
+   position: sticky;
+   top: 0;
+   z-index:10;
+}
+.navbar .onglets{
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbar .onglets p{
+    font-size: 17px; 
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+.navbar .onglets input{
+    margin: 8px 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #f2f2f2;
+
+}
+    
+
+/* fin de la barre de navigation */
+/* header */
+.hero-section{
+    position: relative;
+    height: 60vh;
+    background: url(./assets/images/madagascar.jpg) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.overlay h1{
+    font-size: 50px;
+    max-width: 500px;
+    text-align: center;
+    color: white;
+}
+.overlay button{
+    padding: 15px 20px;
+    font-size: 20px;
+    border-color: white;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+   color: white;
+}
+/* fin du header */
+
+/* section des cartes */
+.cards-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+}
+
+.card {
+    height:500px;
+    object-fit:cover;
+    width:100%;
+    align-content: center;
+    display: block;
+    justify-items: anchor-center;
+    
+}
+.card1{
+    background:url(./assets/images/sainte_marie.jpg) no-repeat center center/cover;
+}
+.card2{
+    background-image:url(./assets/images/Madagascar-Antananarivo-AdobeStock-e1646900870927.jpg);
+    
+}
+
+.card h2 {
+    font-size: 2.5rem;
+    color: #fff;
+
+    
+}
+.card .mountain{
+    left: 100px;
+}
+.card .beach{
+    right: 50px;
+}
+
+.card .s1{
+   
+    color: #fff;
+    font-size: 30px;
+}
+.card .s2{
+   
+    color: #fff;
+    font-size: 30px;
+    
+}
+button{
+    padding: 15px 20px;
+    font-size: 20px;
+    border-color: white;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;   
+}
+/* fin de section des cartes */
+.useful-tips{
+    padding: 20px;
+}
+.tips-grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.tip{
+    text-align: center;
+    width: 100%;
+}
+.tip img{
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    height: 400px;
+}
+.title{
+    align-content: center;
+}
+.mostly-visited{
+    height: 100px;
+    background: url(./fond.png) no-repeat center center/cover;
+}
+.mostly-visited h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+     
+}
+.pictures{
+    display: flex;
+    gap: 10px;
+}
+
+.site-touristique{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 20%;
+    
+    justify-content: space-around;
+}
+.images{
+    display: flex;
+    gap: 10px;
+}
+.pictures span a{
+    text-decoration: none;
+    color: black;
+}
+
+.history{
+    margin: 0%;
+    padding: 0%;
+    background-image: url(./assets/images/Sejour-a-Madagascar.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.history h1 {
+    font-size: 3rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+}
+.history p{
+    font-size: 20px;
+}
+
+.text-title{
+    padding: 20px;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    background-color: #9999994d;
+}
+.prime{
+    
+  
+    
+}
+
+.paysages{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+    
+.gallery{
+    overflow: hidden;
+    
+    
+}
+.gallery img{
+    width: 100%;
+    height:300px;
+    object-fit:cover;
+    display: block;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+.gallery img:hover{
+    transform: scale(1.05);
+}  
+
+ .icon-title{
+   display: flex;
+   margin: 2rem 0;
+   justify-content: center;
+    align-items: center;
+ }      
+ .icon{
+    display: flex;
+    gap: 150px;
+    text-align: center;
+
+} 
+.icon i{
+    font-size: 2rem;
+}
+.icon span{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
